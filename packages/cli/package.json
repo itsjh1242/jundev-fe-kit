@@ -1,13 +1,12 @@
 {
-  "name": "@collaboair/fe-kit",
+  "name": "jundev-kit",
   "files": [
-    "dist",
-    "registry"
+    "dist"
   ],
   "bin": {
-    "fe-kit": "dist/index.js"
+    "jundev-kit": "dist/index.js"
   },
-  "version": "1.0.3",
+  "version": "3.0.0",
   "type": "module",
   "scripts": {
     "build": "tsup src/index.ts --dts --format esm --clean",
@@ -15,11 +14,11 @@
     "yalc:watch": "yalc push --watch --cwd ./"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.6",
     "@types/boxen": "^3.0.5",
-    "@types/file-saver": "^2.0.7",
     "@types/node": "^24.3.0",
     "tsup": "^8.0.0",
     "tsx": "^4.0.0",
@@ -31,7 +30,6 @@
   "dependencies": {
     "boxen": "^8.0.1",
     "chalk": "^5.6.0",
-    "execa": "^9.6.0",
-    "file-saver": "^2.0.5"
+    "execa": "^9.6.0"
   }
 }
