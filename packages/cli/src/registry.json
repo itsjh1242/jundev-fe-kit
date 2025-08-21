@@ -1,0 +1,14 @@
+{
+  "format": {
+    "import": "@collaboair/utils/format",
+    "description": "숫자/통화 포맷"
+  },
+  "debounce": {
+    "import": "@collaboair/utils/debounce",
+    "description": "디바운스 함수"
+  },
+  "file": {
+    "import": "@collaboair/utils/file",
+    "description": "파일 관련 함수"
+  }
+}

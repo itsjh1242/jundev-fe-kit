@@ -1,0 +1,37 @@
+{
+  "name": "@collaboair/fe-kit",
+  "files": [
+    "dist",
+    "registry"
+  ],
+  "bin": {
+    "fe-kit": "dist/index.js"
+  },
+  "version": "1.0.3",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm --clean",
+    "dev": "tsup src/index.ts --dts --format esm --watch",
+    "yalc:watch": "yalc push --watch --cwd ./"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "devDependencies": {
+    "@types/boxen": "^3.0.5",
+    "@types/file-saver": "^2.0.7",
+    "@types/node": "^24.3.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.6.0",
+    "execa": "^9.6.0",
+    "file-saver": "^2.0.5"
+  }
+}
